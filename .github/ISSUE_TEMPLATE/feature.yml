@@ -1,0 +1,63 @@
+name: Feature
+description: Propose new or improved functionality.
+type: Feature
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide background information and rationale for the feature.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: Provide a description of the expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Define inclusions and exclusions.
+      placeholder: |
+        Inclusions:
+        -
+
+        Exclusions:
+        -
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives
+      description: Describe alternative approaches and their limitations.
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define the requirements for completion.
+      placeholder: |
+        - [ ]
+    validations:
+      required: false
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Specify verification checks.
+      placeholder: |
+        - [ ]
+    validations:
+      required: false
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional information
+      description: Include any supporting details or material.
+    validations:
+      required: false

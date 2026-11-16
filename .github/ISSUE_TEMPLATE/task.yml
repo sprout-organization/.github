@@ -1,0 +1,56 @@
+name: Task
+description: Propose a development task.
+type: Task
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide background information and rationale for the task.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: Provide a description of the expected result.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Define inclusions and exclusions.
+      placeholder: |
+        Inclusions:
+        -
+
+        Exclusions:
+        -
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: Define the requirements for completion.
+      placeholder: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation
+      description: Specify verification checks.
+      placeholder: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional information
+      description: Include any supporting details or material.
+    validations:
+      required: false
